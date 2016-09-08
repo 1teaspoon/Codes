@@ -1,0 +1,41 @@
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///mnt/nfs/netapp2/grad/jobadal/code/CS3210_IN_CLASS/Sep8_inclass/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=sep8_inclass
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x18\x00S\x00e\x00p\x008\x00_\x00i\x00n\x00c\x00l\x00a\x00s\x00s\x00\x00\x00\x18\x00s\x00e\x00p\x008\x00_\x00i\x00n\x00c\x00l\x00a\x00s\x00s)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///mnt/nfs/netapp2/grad/jobadal/code/CS3210_IN_CLASS/Sep8_inclass/
+External Terminal=xterm -hold -e %exe
+Project Target=Sep8_inclass,sep8_inclass
+Use External Terminal=true
+Working Directory=
+isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit

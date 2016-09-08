@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/sep8_inclass.dir/main.cpp.o  -o sep8_inclass -rdynamic 
