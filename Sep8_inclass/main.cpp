@@ -25,9 +25,9 @@ int main(int argc, char **argv) {
    std::cout << "Value of ptr: " << ptr << std::endl;
    std::cout << "*ptr: " << *ptr << std::endl;
    
-   use the dereferenced int pointer just like an int
+   //use the dereferenced int pointer just like an int
    *ptr = 123;
- /*  
+   
    std::cout << "Value of v: " << v << std::endl;
    
    int e{200};
@@ -38,15 +38,21 @@ int main(int argc, char **argv) {
          
    // What happens if we try to point it to a double?
    
-   double trouble{666};
-   // ptr = &trouble;
+   double height{6.3};
+   double* double_ptr = &height;
    
    
+   int length = 5;
    // Arrays are implemented with pointers
-   int errorList[] = {1, 2, 3, 4, 5};
+   int errorList[5] = {1, 2, 3, 4, 5};
    
    // how to make a loop that prints out all of the values?
    
+   for(int i = 0; i < length; i++)
+   {
+      std::cout << i << ":" << errorList[i] << std::endl;  
+   }
+   /*
    std::cout << "errorList: " << errorList << std::endl;
    std::cout << "&errorList: " << &errorList << std::endl;
    std::cout << "&errorList[0]: " << &errorList[0] << std::endl;
@@ -75,6 +81,6 @@ int main(int argc, char **argv) {
    
    // And this? Is this ever a good idea?
    std::cout << "&Entire array + 1: " << &errorList + 1 << std::endl;  
-   */*/
+   */
    return 0;
 }
