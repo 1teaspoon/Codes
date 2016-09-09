@@ -52,7 +52,7 @@ int main(int argc, char **argv) {
    {
       std::cout << i << ":" << errorList[i] << std::endl;  
    }
-   /*
+   
    std::cout << "errorList: " << errorList << std::endl;
    std::cout << "&errorList: " << &errorList << std::endl;
    std::cout << "&errorList[0]: " << &errorList[0] << std::endl;
@@ -76,11 +76,11 @@ int main(int argc, char **argv) {
    // What will this be?
    int* ptr_errorList = &errorList[0];
    ptr_errorList++;
-   std::cout << "First eelment: ptr_errorList++ : " << ptr_errorList << std::endl;
+   std::cout << "First elment: ptr_errorList++ : " << ptr_errorList << std::endl;
    std::cout << "First element: *ptr_errorList : " << *ptr_errorList << std::endl;
    
    // And this? Is this ever a good idea?
    std::cout << "&Entire array + 1: " << &errorList + 1 << std::endl;  
-   */
+   
    return 0;
 }
