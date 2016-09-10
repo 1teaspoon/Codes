@@ -6,29 +6,22 @@ double addTwo(int x, int y){
   return 0;
 }
 
-void printNumbers( int* numbers[]);
-
-
 int main(int argc, char **argv) {
-  std::cout << addTwo(6.88,2.0) << std::endl;
-  //std::cout << addTwo(1.0,2.0) << std::endl;
+    std::cout << addTwo(6.88,2.0) << std::endl;
+    std::cout << addTwo(1.0,2.0) << std::endl;
   
-  int result = printNumbers(mynumberlist);
-  
-  /*
-  
-//    std::cout << "Enter an integer: ";
-//     
-//     int inputInt{};
-//     
-//     std::cin >> inputInt;    
-//     
-//     std::cout << "Error flag: " << std::cin.fail() << std::endl;
-//     
-//     std::cout << "Input int: " << inputInt << std::endl;
-//     
-  // Thursday September 8th
-// Pointers and Functions
+    std::cout << "Enter an integer: ";
+    
+    int inputInt{};
+    
+    std::cin >> inputInt;    
+    
+    std::cout << "Error flag: " << std::cin.fail() << std::endl;
+    
+    std::cout << "Input int: " << inputInt << std::endl;
+    
+  //Thursday September 8th
+  //Pointers and Functions
 
  
    int a = 3.5;
@@ -97,8 +90,7 @@ int main(int argc, char **argv) {
    
    // And this? Is this ever a good idea?
    std::cout << "&Entire array + 1: " << &errorList + 1 << std::endl;  
-   */
-  
+     
    //Functions
    
    
