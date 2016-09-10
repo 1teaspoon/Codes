@@ -1,7 +1,23 @@
 #include <iostream>
 
+// <return type> <function name> ( parameters );
+
+double addTwo(int x, int y){
+  return 0;
+}
+
+void printNumbers( int* numbers[]);
+
+
 int main(int argc, char **argv) {
-//     std::cout << "Enter an integer: ";
+  std::cout << addTwo(6.88,2.0) << std::endl;
+  //std::cout << addTwo(1.0,2.0) << std::endl;
+  
+  int result = printNumbers(mynumberlist);
+  
+  /*
+  
+//    std::cout << "Enter an integer: ";
 //     
 //     int inputInt{};
 //     
@@ -81,6 +97,10 @@ int main(int argc, char **argv) {
    
    // And this? Is this ever a good idea?
    std::cout << "&Entire array + 1: " << &errorList + 1 << std::endl;  
+   */
+  
+   //Functions
+   
    
    return 0;
 }
