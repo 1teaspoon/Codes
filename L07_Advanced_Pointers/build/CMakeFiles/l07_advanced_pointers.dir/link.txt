@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/l07_advanced_pointers.dir/main.cpp.o  -o l07_advanced_pointers -rdynamic 
