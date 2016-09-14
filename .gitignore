@@ -1,29 +1,79 @@
-# Compiled Object files
-*.slo
+# kdevelop files
+apidocs
+.kdev4
+build
+*~
+*.orig
+*.rej
+doxygen.log
+Doxyfile
+*.kdevelop
+*.kdevelop.filelist
+*.kdevelop.pcs
+*.kdevses
+.*kate-swp
+build/
+
+*.[oa]
+# Compiled Static libraries
+*.a
+*.config
+*.dylib
+*.la
+*.lai
 *.lo
+*.nhdr
+*.nii.gz
+*.nrrd
+# Compiled Object files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
+*.orig
+*.pyc
+*.raw
+*.sample
+*.slo
 # Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
+*.swp
+*ExternalSources*
+# emacs backups
+*~
+.DS_Store
+.ExternalData_MD5*
+.RData
+.RDataTmp
+.Rhistory
+._*
+.clang_complete
+.emacs.desktop
+.idea
+.svn
+CMakeCache.txt
+CMakeFiles/*
+crash*
+# History files
+.Rhistory
+# Cache File
+.RData
+# Example code in package build process
+*-Ex.R
+.Rproj.user
+cache
+.DS_Store
+# Latex stuff
+*.tex
+*.aux
+*.lof
+*.lot
+*.toc
+*.tdo
+*.pdf
+*.log
+*.gz
 
-# Fortran module files
-*.mod
-*.smod
+# ignore all files that end with .password
+*.password
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# RDATA files saved
+*.rda
