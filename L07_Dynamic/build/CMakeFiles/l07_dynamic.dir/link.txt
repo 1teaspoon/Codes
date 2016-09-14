@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/l07_dynamic.dir/main.cpp.o  -o l07_dynamic -rdynamic 
