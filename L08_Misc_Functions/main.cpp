@@ -65,9 +65,19 @@ int main(int argc, char **argv) {
   std::cout << "Address of myName_ptr: " << myName_ptr << std::endl;
   std::cout << "Address of alsoMyName: " << &alsoMyName << std::endl;
   
+  //printSection("Default Values and variadic arguments")
+  
+  // If you look at the "square" function earlier you can see that it uses function overloading
+  // You can set the default arguments in the prototype to avoid excessive function overloading
   
   
-   
+  
+  // However, if you have noticed that the command line arguments have no limits, so how does that work?
+  // For the curious you can look up variadic functions and templates
   
   
+  // Add any examples or answers to problems from the homework and/or quiz
+
+  
+  return 0;  
 }
