@@ -3,9 +3,19 @@
 
 using namespace std;
 
+Point addPoints(Point one, Point two){
+  return Point( one.x + two.x, one.y + two.y);
+}
+
+// Subtracts point two from point one ( two - one )
+Point subPoints(Point one, Point two)
+{
+  return Point( one.x - two.x, one.y - two.y);
+}
+
 // vector.cpp - method implementation
 void Point::offset(double offsetX, double offsetY) {
-    x += offsetX;
+    this->x += offsetX;
     y += offsetY;
 }
 void Point::print() {
@@ -22,4 +32,17 @@ void Vector::print() {
     cout << " -> ";
     end.print();
     cout << endl;
+}
+
+Point::Point()
+{
+    x = 0.0;
+    y = 0.0;
+    std::cout << "Point constructor called" << std::endl;
+}
+
+
+Point::Point( double newx, double newy) {
+    x = newx;
+    y = newy;
 }

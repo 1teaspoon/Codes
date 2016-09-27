@@ -2,9 +2,13 @@
 #include <iostream>
 #include <cctype>  // or ctype.h
 #include "stack.h"
+
+
+
 int main()
 {
     using namespace std;
+      
     Stack st; // create an empty stack
     char ch;
     unsigned long po;

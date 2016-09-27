@@ -5,6 +5,7 @@ using namespace std;
 // constructors
 Stock::Stock()        // default constructor
 {
+    
     shares = 0;
     share_val = 0.0;
     total_val = 0.0;
@@ -94,10 +95,12 @@ void Stock::show() const
     cout.precision(prec);
 }
 
-const Stock & Stock::topval(const Stock & s) const
+const Stock & Stock::topval(const Stock &s) const
 {
     if (s.total_val > total_val)
         return s;
     else
         return *this; 
 }
+
+

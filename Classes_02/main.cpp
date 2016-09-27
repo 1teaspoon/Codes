@@ -21,7 +21,7 @@ using std::string;
 //const <-- compiler will try to make sure it is not modified
 //volatile <-- compiler will not assume the value won't change by other programs/hardware.
 
-struct Book{
+struct book{
   string author;
   string title;
   int numPages;
@@ -33,6 +33,16 @@ void strcount(const string &someString);
 
 int main()
 {
+   Point myPointOne(2,2);
+   Point myPointTwo(4,4);
+   
+   Point result = addPoints(myPointOne, myPointTwo);
+   
+   result.print();
+   
+   Point* point_ptr = &myPointOne;
+   
+   point_ptr->print();  
   
    std::cout << "Calling strcount() three times." << std::endl;
    string first = "Jeffrey";
@@ -45,10 +55,21 @@ int main()
    
    //Create a const book with the variable name "myBook" and try to modify the different members.
    
+   book myBook = { "author", "title", 128, 0 };
+   
+   myBook.numberOfTimesCheckedOut = 20;
+   
+   
    
    //Now create a pointer to myBook and modify the values
    
-   //Create functiosn in the vector class to add and subtract vectors
+   book* mybook_ptr = &myBook;
+   
+   mybook_ptr->author = "Ray";
+   
+   std::cout << myBook.author << std::endl;
+   
+   //Create functions in the vector class to add and subtract vectors
    
    //What about comparing vectors? Would it make sense to even compare vectors?
    

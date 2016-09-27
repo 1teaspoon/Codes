@@ -1,18 +1,17 @@
 #include <iostream>
 
-
 class Point {
 public:
     double x, y;
     void offset(double offsetX, double offsetY);
     void print();
-    Point()
-    {
-      x = 0.0;
-      y = 0.0;
-      std::cout << "Point constructor called" << std::endl;
-    }
+    Point();
+    Point(double newx, double newy);
 };
+
+Point addPoints(Point one, Point two);
+Point subPoints(Point one, Point two);
+
 
 class Vector {
 public:

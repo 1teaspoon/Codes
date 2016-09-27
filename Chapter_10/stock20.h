@@ -3,6 +3,8 @@
 #define STOCK20_H_
 #include <string>
 
+
+
 class Stock
 {
 private:
