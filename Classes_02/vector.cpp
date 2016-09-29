@@ -46,3 +46,15 @@ Point::Point( double newx, double newy) {
     x = newx;
     y = newy;
 }
+
+// Point operator+(const Point &P) const;
+
+Point Point::operator+(const Point& P) const
+{
+  return Point( this->x + P.x, this->y + P.y );      
+}
+
+Point Point::operator-(const Point& P) const
+{
+  return Point( this->x - P.x, this->y - P.y);
+}

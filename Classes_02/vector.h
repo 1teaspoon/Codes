@@ -5,6 +5,8 @@ public:
     double x, y;
     void offset(double offsetX, double offsetY);
     void print();
+    Point operator+(const Point &P) const;
+    Point operator-(const Point &P) const;
     Point();
     Point(double newx, double newy);
 };

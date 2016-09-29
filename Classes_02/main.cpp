@@ -31,51 +31,57 @@ struct book{
 // function prototype
 void strcount(const string &someString);
 
-int main()
+int main(int argc, char** argv)
 {
    Point myPointOne(2,2);
    Point myPointTwo(4,4);
    
-   Point result = addPoints(myPointOne, myPointTwo);
+   Point result = myPointOne + myPointTwo;
+   Point result2 =  myPointOne.operator+(myPointTwo);
+   Point result3 = myPointOne - myPointTwo;
    
    result.print();
-   
-   Point* point_ptr = &myPointOne;
-   
-   point_ptr->print();  
-  
-   std::cout << "Calling strcount() three times." << std::endl;
-   string first = "Jeffrey";
-   string middle = "Ray";
-   string last = "Obadal";
-   
-   strcount(first);
-   strcount(middle);
-   strcount(last);
-   
-   //Create a const book with the variable name "myBook" and try to modify the different members.
-   
-   book myBook = { "author", "title", 128, 0 };
-   
-   myBook.numberOfTimesCheckedOut = 20;
-   
-   
-   
-   //Now create a pointer to myBook and modify the values
-   
-   book* mybook_ptr = &myBook;
-   
-   mybook_ptr->author = "Ray";
-   
-   std::cout << myBook.author << std::endl;
-   
-   //Create functions in the vector class to add and subtract vectors
-   
-   //What about comparing vectors? Would it make sense to even compare vectors?
-   
-   //Any other operations that would be good for vectors?
-   
-   
+   std::cout << std::endl;
+   result2.print();
+   std::cout << std::endl;
+   result3.print();
+//    /*
+//    Point* point_ptr = &myPointOne;
+//    
+//    point_ptr->print();  
+//   
+//    std::cout << "Calling strcount() three times." << std::endl;
+//    string first = "Jeffrey";
+//    string middle = "Ray";
+//    string last = "Obadal";
+//    
+//    strcount(first);
+//    strcount(middle);
+//    strcount(last);
+//    
+//    //Create a const book with the variable name "myBook" and try to modify the different members.
+//    
+//    book myBook = { "author", "title", 128, 0 };
+//    
+//    myBook.numberOfTimesCheckedOut = 20;
+//    
+//    
+//    
+//    //Now create a pointer to myBook and modify the values
+//    
+//    book* mybook_ptr = &myBook;
+//    
+//    mybook_ptr->author = "Ray";
+//    
+//    std::cout << myBook.author << std::endl;
+//    
+//    //Create functions in the vector class to add and subtract vectors
+//    
+//    //What about comparing vectors? Would it make sense to even compare vectors?
+//    
+//    //Any other operations that would be good for vectors?
+//    
+//    */
    return 0;
 }
 
