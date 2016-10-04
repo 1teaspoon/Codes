@@ -33,6 +33,7 @@ void strcount(const string &someString);
 
 int main(int argc, char** argv)
 {
+   Point myPointList[] = new Point(5);
    Point myPointOne(2,2);
    Point myPointTwo(4,4);
    

@@ -22,7 +22,7 @@ StringBad::StringBad(const char * s)
 StringBad::StringBad()                // default constructor
 {
     len = 4;
-    str = new char[4];
+    str = new char[len+1];
     std::strcpy(str, "C++");          // default string
     num_strings++;
     cout << num_strings << ": \"" << str
