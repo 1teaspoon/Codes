@@ -1,5 +1,9 @@
 // use_new.cpp -- using the new operator
 #include <iostream>
+
+// function prototype
+void increase(int &number);
+
 int main()
 {
     using namespace std;
@@ -11,6 +15,14 @@ int main()
     cout << nights << ": location " << &nights << endl;
     cout << "int ";
     cout << "value = " << *pt << ": location = " << pt << endl;
+    
+    increase(*pt);
+    
+    cout << "nights value = ";
+    cout << nights << ": location " << &nights << endl;
+    cout << "int ";
+    cout << "value = " << *pt << ": location = " << pt << endl;
+    
 
     double * pd = new double;   // allocate space for a double
     *pd = 10000001.0;           // store a double there
@@ -24,4 +36,9 @@ int main()
     cout << ": size of *pd = " << sizeof(*pd) << endl;
     // cin.get();
     return 0;
+}
+
+void increase(int &number)
+{
+    number++;
 }
