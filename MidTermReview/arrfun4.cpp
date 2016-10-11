@@ -22,10 +22,16 @@ int main()
 // return the sum of an integer array
 int sum_arr(const int * begin, const int * end)
 {
-    const int * pt;
+    const int * pt = begin;
     int total = 0;
+    
+    std::cout << "pt: " << pt << std::endl;
 
-    for (pt = begin; pt != end; pt++)
-        total = total + *pt;
+    for (pt = begin; pt != end; pt++){
+	std::cout << "pt: " << pt << std::endl;
+	total = total + *pt;
+    }
+    
+    std::cout << "pt: " << pt << std::endl;
     return total; 
 }
