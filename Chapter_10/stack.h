@@ -10,8 +10,10 @@ private:
     enum {MAX = 10};    // constant specific to class
     Item items[MAX];    // holds stack items
     int top;            // index for top stack item
+    
 public:
     Stack();
+    static int numberOfObjects = 35;
     bool isempty() const;
     bool isfull() const;
     // push() returns false if stack already is full, true otherwise
@@ -20,3 +22,6 @@ public:
     bool pop(Item & item);          // pop top into item
 };
 #endif
+
+
+// Stack::numberOfObjects

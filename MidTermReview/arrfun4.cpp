@@ -25,7 +25,15 @@ int sum_arr(const int * begin, const int * end)
     const int * pt = begin;
     int total = 0;
     
+    int size = end - begin;
+    int *newArray = new int[size]; 
+    
     std::cout << "pt: " << pt << std::endl;
+    
+    for(int x = 0; x < size; x++)
+    {
+      newArray[x] = begin[x];
+    }
 
     for (pt = begin; pt != end; pt++){
 	std::cout << "pt: " << pt << std::endl;

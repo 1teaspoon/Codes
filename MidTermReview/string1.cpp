@@ -31,6 +31,7 @@ String::String()                   // default constructor
     num_strings++;
 }
 
+// "copy constructor" 
 String::String(const String & st)
 {
     num_strings++;             // handle static member update

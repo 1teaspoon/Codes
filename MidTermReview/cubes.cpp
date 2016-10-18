@@ -1,5 +1,6 @@
 // cubes.cpp -- regular and reference arguments
 #include <iostream>
+#include <string>
 double cube(double a);
 double refcube(double &ra);
 int main ()

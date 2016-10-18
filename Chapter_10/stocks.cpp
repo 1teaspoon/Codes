@@ -2,6 +2,8 @@
 #include <iostream>
 #include "stocks00.h"
 
+const int MAX = 256;
+
 int main()
 {
     Stock stock1;

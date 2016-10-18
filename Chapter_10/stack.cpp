@@ -1,5 +1,8 @@
 // stack.cpp -- Stack member functions
 #include "stack.h"
+
+Stack::numberOfObjects = 35;
+
 Stack::Stack()    // create an empty stack
 {
     top = 0;

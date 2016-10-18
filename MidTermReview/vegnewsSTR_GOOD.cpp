@@ -11,9 +11,15 @@ int main()
 {
     using std::endl;
     {
+      
+        
         cout << "Starting an inner block.\n";
         String headline1("Celery Stalks at Midnight");
         String headline2("Lettuce Prey");
+	
+	String headline3 = headline2;
+	
+	
         String sports("Spinach Leaves Bowl for Dollars");
         cout << "headline1: " << headline1 << endl;
         cout << "headline2: " << headline2 << endl;

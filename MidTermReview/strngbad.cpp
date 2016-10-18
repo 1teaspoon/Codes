@@ -12,7 +12,7 @@ int StringBad::num_strings = 0;
 StringBad::StringBad(const char * s)
 {
     len = std::strlen(s);             // set size
-    str = new char[len + 1];          // allot storage
+    str = new char[len + 1];          // allocate storage
     std::strcpy(str, s);              // initialize pointer
     num_strings++;                    // set object count
     cout << num_strings << ": \"" << str
