@@ -13,7 +13,7 @@ private:
     
 public:
     Stack();
-    static int numberOfObjects = 35;
+    static int numberOfObjects;
     bool isempty() const;
     bool isfull() const;
     // push() returns false if stack already is full, true otherwise
