@@ -40,4 +40,4 @@ bool Virus::survive(float immunity) {
   return true;  
 }
 
-const float Virus::defaultReproductionRate;
+const float Virus::defaultReproductionRate = 0.20;

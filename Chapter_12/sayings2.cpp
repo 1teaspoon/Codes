@@ -9,10 +9,10 @@ const int MaxLen = 81;
 int main()
 {
     using namespace std;
-    String name;
+    String name();
     cout <<"Hi, what's your name?\n>> ";
     cin >> name;
-
+    
     cout << name << ", please enter up to " << ArSize
          << " short sayings <empty line to quit>:\n";
     String sayings[ArSize];

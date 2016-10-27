@@ -3,7 +3,7 @@
 
 class Virus {
 
-  static const float defaultReproductionRate = 0.20;
+  static const float defaultReproductionRate;
 
   float reproductionRate;  // rate of reproduction, in %
   float resistance;        // resistance against drugs, in %

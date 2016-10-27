@@ -20,4 +20,4 @@ class Patient {
 
 };
 
-#endif PATIENT_H
+#endif // PATIENT_H
