@@ -20,7 +20,7 @@ int main(){
   james->displayProfile();
   james->addClassTaken(c2);
   james->addClassTaken(c3);
-  james->displayProfile();  
+  james->displayProfile();  l
 
   Student* steve2 = dynamic_cast<Student*>(steve);
 

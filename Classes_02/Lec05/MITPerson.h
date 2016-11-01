@@ -16,7 +16,7 @@ class MITPerson {
   MITPerson(int id, std::string name, std::string address);
   virtual ~MITPerson();
   
-  virtual void displayProfile();
+  void displayProfile();
   void changeAddress(std::string newAddress);
 
 };

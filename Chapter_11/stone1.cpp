@@ -3,6 +3,14 @@
 #include <iostream>
 #include "stonewt1.h"
 
+void printwhateverDouble(double x){
+  std::cout << x << std::endl;
+}
+
+void printwhateverStone(Stonewt &s){
+  s.show_stn();
+}
+
 int main()
 {
     using std::cout;
@@ -13,5 +21,11 @@ int main()
     cout << "Convert to int => ";
     cout << "Poppins: " << int (poppins) << " pounds.\n";
 	// std::cin.get();
+    
+    printwhateverDouble(poppins);
+    printwhateverDouble(p_wt);
+    printwhateverStone(poppins);
+    printwhateverStone((Stonewt)p_wt);
+    
     return 0; 
 }
