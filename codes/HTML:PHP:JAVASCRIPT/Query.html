@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HSC Ontogeny</title>
+        <style type="text/css">
+            body{
+            	    font-size:80%;
+            	    font-family:"Courier New", Counrier, monopace;
+            	    letter-spacing: 0.15em;
+            	    background-color:#efefef;}
+            	#page{
+            		max-width: 940px;
+            		min-width:720px;
+            		margin:10px auto 10px auto;
+            		padding:20px;
+            		border:4px double #000;
+            		background-color:#ffffff;}
+            	}
+            	ul{
+            		width:570px;
+            		padding:15px;
+            		margin:0px auto 0px auto;
+            		border-top:2px solid #000;
+            		border-bottom:1px solid #000;
+            		text-align:center;}
+            	li{
+            		display:inline;
+            		margin:0px 35px;}
+            	h1{
+                color:rgb(255,0,0);
+                letter-spacing: 0.1em;
+                font-size: 500%;
+                text-align: center;
+                font-weight: normal;
+                line-height: 0.2em;}
+            h2{
+                text-align:center;
+	            font-size: 120%;
+	            line-height:3.5em}
+            	p{
+            		text-align:left;
+            		width:800px;
+            		margin:20px auto 20px auto;
+            		font-weight:normal;}
+            	a{
+            	    color:#000000;
+            	    text-transform: uppercase;
+            	    text-decoration: none;
+            	    padding: 6px 18px 5px 18px;}
+            	a:hover, a.on{
+            		color: #cc3333;
+            		background-color: #ffffff;}
+            	filedset{
+            		width:310px;
+            		margin-top:20px;
+            		border:1px solid #d6d6d6;
+            		background-color: #ffffff;
+            		line-height:1.6em;}
+            	legend{
+            		font-style:italic;
+            		color:#666666;}
+            		
+            	.title{
+            		float:left;
+            		width:250px;
+            		clear:left;}
+            	.submit{
+            	    width:310px;
+            		text-align:right;}
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <h1>HSC ONTOGENY</h1>
+            <ul id="navigation">
+                <li><a href="index1.html" class="on">Home</a></li>
+                <li><a href="Query.html">Query</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+                        
+            <form action="searchGeneName.php" method="get">
+                <fieldset>
+            			<legend>Gene Based Query</legend>
+            			<p><label class="title" for="name" >Enter a gene name:</label>
+            			<input type="text" id="name" name="name" /></p>
+            			<span class="title">search for stage:</span>
+            			<label><input type="radio" name="stage" value="Endo" />Endo</label>
+            			<label><input type="radio" name="stage" value="HE" />HE</label>
+            			<label><input type="radio" name="stage" value="PreHSC" />PreHSC</label>
+            			<label><input type="radio" name="stage" value="FL" />FL</label>
+            			<label><input type="radio" name="stage" value="BM" />BM</label>
+            			<div class="submit">
+            			<input type="submit" value="search" id="submit" />
+            			</div>
+            		</fieldset>
+            		
+            </form>
+            <form action="searchGenomeRegion.php" method="post">
+                <fieldset>
+            			<legend>Genome Region Based Query</legend>
+            			<p><label class="title" for="name" >Enter a genome region:</label>
+            			<input type="text" id="name" name="name" /></p>
+            			<span class="title">search for stage:</span>
+            			<label><input type="radio" name="stage" value="Endo" />Endo</label>
+            			<label><input type="radio" name="stage" value="HE" />HE</label>
+            			<label><input type="radio" name="stage" value="PreHSC" />PreHSC</label>
+            			<label><input type="radio" name="stage" value="FL" />FL</label>
+            			<label><input type="radio" name="stage" value="BM" />BM</label>
+            			<div class="submit">
+            			<input type="submit" value="search" id="submit" />
+            			</div>
+            		</fieldset>
+            		
+            </form>
+            <form action="heatmap.php" method="post" enctype="multipart/form-data">
+                    <fieldset>
+            			<legend>Gene expression Heatmap Query</legend>
+            			<p><label class="title" for="name" >Enter gene names:</label>
+            			<textarea name="txtarea"></textarea>
+            			<div class="submit">
+            			<input type="submit" value="search" id="submit" />
+            			</div>
+            </form>
+
+    </body>
+</html>
