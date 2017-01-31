@@ -1,6 +1,6 @@
 import os,sys
 
-source = "/Users/Data/HF/lincRNA/Cufflinks_novo/Results/"
+source = "/Users/Data/HF/Cufflinks_novo/Results/"
 
 DirList = os.listdir(source)
 test = []
