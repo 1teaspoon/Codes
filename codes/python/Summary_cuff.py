@@ -1,7 +1,7 @@
 import os,sys
 
-source = "/Users/Data/HF/lincRNA/Com_transcripts/Results_cuff/"
-output = "/Users/Data/HF/lincRNA/Cuffcompare/Scripts/Sum_Results/"
+source = "/Users/Data/HF/Com_transcripts/Results_cuff/"
+output = "/Users/Data/HF/Cuffcompare/Scripts/Sum_Results/"
 
 Hit_list = {}
 DirList = os.listdir(source)
@@ -34,7 +34,7 @@ while True:
 f.close
 
 
-f = file("/Users/Data/HF/lincRNA/Cuffcompare/Novel_Combine/cuffcmp.tracking")
+f = file("/Users/Data/HF/Cuffcompare/Novel_Combine/cuffcmp.tracking")
 all_list = {}
 out = []
 while True:
