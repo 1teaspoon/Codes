@@ -6,8 +6,8 @@ annotation = "/Shared/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Annotation/G
 seq = "/Shared/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Sequence/WholeGenomeFasta/genome.fa"
 
 source = "/Shared/HF/Merged_Bam/"
-cluster = "/Users/HF/lincRNA/Cufflinks_novo/Clusters/"
-output = "/Users/HF/lincRNA/Cufflinks_novo/Results/"
+cluster = "/Users/HF/Cufflinks_novo/Clusters/"
+output = "/Users/HF/Cufflinks_novo/Results/"
 
 DirList = os.listdir(source)
 for item in DirList:
