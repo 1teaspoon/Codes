@@ -1,13 +1,13 @@
 import os, sys
 
-envir = "export PATH=$PATH:/Shared/Tan/Software/cufflinks-2.2.1/"
+envir = "export PATH=$PATH:/Shared/Software/cufflinks-2.2.1/"
 
-annotation = "/Shared/Tan/gaolong/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Annotation/Genes/genes.gtf"
-seq = "/Shared/Tan/gaolong/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Sequence/WholeGenomeFasta/genome.fa"
+annotation = "/Shared/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Annotation/Genes/genes.gtf"
+seq = "/Shared/Annotation/Mouse/Mus_musculus/Ensembl/NCBIM37/Sequence/WholeGenomeFasta/genome.fa"
 
-source = "/Shared/Tan/gaolong/HF/Merged_Bam/"
-cluster = "/Users/jwang36/Long/HF/lincRNA/Cufflinks_novo/Clusters/"
-output = "/Users/jwang36/Long/HF/lincRNA/Cufflinks_novo/Results/"
+source = "/Shared/HF/Merged_Bam/"
+cluster = "/Users/HF/lincRNA/Cufflinks_novo/Clusters/"
+output = "/Users/HF/lincRNA/Cufflinks_novo/Results/"
 
 DirList = os.listdir(source)
 for item in DirList:
